@@ -1,4 +1,4 @@
-const cacheName = "DefaultCompany-Gavirad Game-1.1";
+const cacheName = "DefaultCompany-Gavirad Game-1.2";
 const contentToCache = [
     "Build/Build_Gavirad.loader.js",
     "Build/Build_Gavirad.framework.js",
@@ -24,7 +24,10 @@ self.addEventListener('fetch', function (e) {
       console.log(`[Service Worker] Fetching resource: ${e.request.url}`);
       if (response) { return response; }
 
-      response = await fetch(e.request);      
+      response = await fetch(e.request);
+      const cache = await caches.open(cacheName);
+      console.log(`[Service Worker] Caching new resource: ${e.request.url}`);
+      cache.put(e.request, response.clone());
       return response;
     })());
 });
