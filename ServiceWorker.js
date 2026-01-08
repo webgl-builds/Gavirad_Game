@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-Gavirad Game-1.7";
 const contentToCache = [
-    "Build/game.loader.js",
-    "Build/game.framework.js",
-    "Build/game.data",
-    "Build/game.wasm",
+    "Build/Gavirad_Game.loader.js",
+    "Build/Gavirad_Game.framework.js",
+    "Build/Gavirad_Game.data",
+    "Build/Gavirad_Game.wasm",
     "TemplateData/style.css"
 
 ];
