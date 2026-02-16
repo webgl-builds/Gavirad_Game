@@ -5,7 +5,6 @@ const contentToCache = [
     "Build/Gavirad_Game.data",
     "Build/Gavirad_Game.wasm",
     "TemplateData/style.css"
-
 ];
 
 self.addEventListener("install", event => {
