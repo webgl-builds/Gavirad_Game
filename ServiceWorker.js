@@ -1,10 +1,11 @@
-const cacheName = "DefaultCompany-Gavirad Game-1.7";
+const cacheName = "DefaultCompany-Gavirad Game-1.8";
 const contentToCache = [
     "Build/Gavirad_Game.loader.js",
     "Build/Gavirad_Game.framework.js",
     "Build/Gavirad_Game.data",
     "Build/Gavirad_Game.wasm",
     "TemplateData/style.css"
+
 ];
 
 self.addEventListener("install", event => {
